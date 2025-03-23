@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Antra Header with Bootstrap Icons</title>
+
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .header {
+        background-color: #1f3556;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo img {
+        height: 100px;
+      }
+
+      .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .menu > li {
+        position: relative;
+      }
+
+      .menu > li > a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: inline-block;
+      }
+
+      .menu li:hover > ul {
+        display: block;
+      }
+
+      .menu ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        background-color: #2d4a75;
+        list-style: none;
+        padding: 10px;
+        min-width: 150px;
+        border-radius: 4px;
+        z-index: 1;
+      }
+
+      .menu ul li a {
+        display: block;
+        padding: 8px;
+        color: white;
+        text-decoration: none;
+      }
+
+      .right-section {
+        text-align: right;
+      }
+      .right-section div {
+        display: inline-block;
+      }
+      .user-section ul {
+        display: none;
+        position: absolute;
+        background-color: #2d4a75;
+        list-style: none;
+        padding: 10px;
+        min-width: 150px;
+        border-radius: 4px;
+        z-index: 1;
+      }
+      .user-section:hover > ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="https://antra.net/">
+          <img
+            src="https://antra.com/wp-content/uploads/elementor/thumbs/Antra-white-r0320wike657nknmj2q1vu371nb185u7u42xicruzm.png"
+            title="Antra Inc"
+            alt="Antra Inc"
+            loading="lazy"
+          />
+        </a>
+      </div>
+
+      <div>
+        <!-- User Section -->
+        <div class="right-section">
+          <div>0 <i class="bi bi-bell"></i></div>
+          <div class="user-section">
+            USER ▾
+            <ul>
+              <li>Profile</li>
+              <li>Setting</li>
+              <li>Log out</li>
+            </ul>
+          </div>
+          <div>
+            <input type="text" placeholder="Search..." />
+            <button><i class="bi bi-search"></i></button>
+          </div>
+        </div>
+        <!-- Navigation Menu -->
+        <ul class="menu">
+          <li><a href="https://www.google.com" target="_blank">NEWS</a></li>
+          <li>
+            <a href="https://www.google.com" target="_blank"
+              >ABOUT THE UNIVERSITY ▾</a
+            >
+            <ul>
+              <li>
+                <a href="https://www.google.com" target="_blank">Overview</a>
+              </li>
+              <li>
+                <a href="https://www.google.com" target="_blank">History</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.google.com" target="_blank"
+              >TRAINING COURSES ▾</a
+            >
+            <ul>
+              <li>
+                <a href="https://www.google.com" target="_blank">Web Dev</a>
+              </li>
+              <li>
+                <a href="https://www.google.com" target="_blank"
+                  >Data Science</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://www.google.com" target="_blank">FOR COMPANIES</a>
+          </li>
+          <li><a href="https://www.google.com" target="_blank">FORUM</a></li>
+          <li><a href="https://www.google.com" target="_blank">CONTACTS</a></li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>

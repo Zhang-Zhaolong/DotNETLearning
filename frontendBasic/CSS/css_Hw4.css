@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9f8;
+}
+
+.banner {
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20240801/pngtree-golden-sunset-with-bench-and-streetlights-in-park-image_16123524.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #666;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.green {
+  color: #6cae1f;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  border: solid rgb(171, 171, 171);
+}
+
+.product {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.product img {
+  margin-right: 15px;
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgb(89, 149, 0);
+}
